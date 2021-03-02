@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+El siguiente desarrollo web muestra el consumo de una API Rest https://mindicador.cl.
+Esta se guarda en la base de datos con su fecha (unico) y valor, para luego desplegar la vista en una tabla simple con bootstrap, CSS y HTML.
+El show muestra un determinado registro por día, con su valor, en un HTML simple.
