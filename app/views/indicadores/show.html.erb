@@ -1,0 +1,43 @@
+<style>
+#barra {
+    background-color: #5F9EA0;
+}
+</style>
+
+<nav id="barra" class="navbar navbar-expand-lg navbar-dark teal mb-4">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="h-100">
+  <header class="container h-100">
+    <div class="d-flex align-items-center justify-content-center h-100">
+      <div class="d-flex flex-column">
+            <article class="card animated fadeInUp">
+                <div class="card-img-wrapper">
+                    <img class="card-img-top" src="https://leversens.com/wp-content/uploads/2019/06/indicadores-conflicto.png" alt="Card image cap">
+                </div>
+                <div class="card-block">
+                <h4 class="card-title">Indicador UF por día</h4>
+                <h6 class="text-muted">Detalle de UF por día</h6>
+                </div>
+                <div class="card-block">
+                <p class="card-text">Fecha de indicador: <%= @indicador.fecha.strftime("%d/%m/%y") %></p>
+                <p class="card-text">Precio del día: $<%= @indicador.valor %></p>
+                </div>
+                <div class="card-block text-center">
+                </div>
+            </article>
+            <a href="/" class="btn btn-outline-warning"" role="button" aria-pressed="true">Volver</a>
+      </div>
+    </div>
+  </header>
+</section>

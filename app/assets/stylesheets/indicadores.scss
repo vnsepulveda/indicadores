@@ -2,3 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "bootstrap/scss/bootstrap";
+//= require bootstrap
+//= require jquery
+//= require jquery_ujs
+//= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+//= require turbolinks
+//= require dataTables/jquery.dataTables
+//= require_tree .

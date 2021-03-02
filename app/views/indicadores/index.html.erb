@@ -1,7 +1,7 @@
 <style>
  body {
      background-color: #f9f9fa;
-     overflow-y:hidden;
+     overflow-y : auto; 
  }
 
  .flex {
@@ -117,6 +117,38 @@
 #barra {
     background-color: #5F9EA0;
 }
+table.tableSection {
+    height: 250px;
+    display: table;
+    width: 100%;
+}
+
+table.tableSection thead,
+table.tableSection tbody {
+    width: 100%;
+    height: 100%:
+}
+
+table.tableSection thead {
+    overflow-y: scroll;
+    display: table;
+    table-layout: fixed;
+    width: calc(100% - 16px); /* assuming scrollbar width as 16px */
+}
+
+table.tableSection tbody {
+    overflow: auto;
+    height: 250px;
+    display: block;
+}
+
+table.tableSection tr {
+    width: 100%;
+    text-align: left;
+    display: table;
+    table-layout: fixed;
+}
+
 </style>
 
 <nav id="barra" class="navbar navbar-expand-lg navbar-dark teal mb-4">
@@ -140,8 +172,8 @@
                     <div class="card-body">
                         <h4 class="card-title">Indicadores económicos</h4>
                         <p class="card-description"> En esta tabla, se mostrará el valor de la UF de los últimos 30 días </p>
-                        <div class="table-responsive" data-turbolinks="false">
-                            <table id="indicadores" class="table table-hover">
+                        <div class="table-responsive">
+                            <table id="indicadores" class="tableSection">
                                 <thead>
                                     <tr>
                                         <th>Fecha</th>
@@ -166,17 +198,4 @@
         </div>
     </div>
 </div>
-<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#indicadores').dataTable({
-        "bInfo": false,
-        "bLengthChange": false,
-        "bFilter": false,
-        "aaSorting": [],
-    });
-});
-</script>
